@@ -5,3 +5,35 @@ dl {
 h3 {
     color: red;
 }
+/* CSS syntax for a class */
+.relative {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding: 10px, 10px, 0, 0;
+    border: 2px solid #000;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 400px;
+    height: 200px;
+    padding-left: 12px;
+    padding-top: 12px;
+    border: 2px solid #000;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    margin-bottom: 12px;
+    background-color: rgb(48, 197, 93);
+    border: 2px solid green;
+}
+/*CSS syntax for an ID */
+#secondPara {
+
+}
