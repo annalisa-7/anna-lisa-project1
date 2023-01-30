@@ -15,10 +15,6 @@ a:hover {
     text-decoration: underline;
     font-style: italic;
 
-dl {
-    color: green;
-}
-
 h3 {
     color: red;
 }
@@ -28,4 +24,8 @@ h1 {
 
 h2 {
     color: bisque;
+}
+
+.shadow {
+    text-shadow: 2px 2px red;
 }
