@@ -14,10 +14,12 @@ a:visited {
 a:hover {
     text-decoration: underline;
     font-style: italic;
-
-h3 {
-    color: red;
 }
+
+dl {
+    color: green;
+}
+
 h1 {
     color: blueviolet;
 }
@@ -27,5 +29,8 @@ h2 {
 }
 
 .shadow {
-    text-shadow: 2px 2px red;
+    text-shadow: 2px 2px rgb(208, 167, 167);
+}
+.background {
+    background-image: url("/feelsoclose.jpeg");
 }
