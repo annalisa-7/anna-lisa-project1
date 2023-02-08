@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>JQuery Example</title>
+    <script>
+        $(document).ready(function(){
+            // $(selector).action()
+            $("button").click(function(){
+                $(".second").hide();
+            })
+
+            $("#p1").mouseleave(function(){
+                alert("Mouse has left p1!");
+            })
+
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray")
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue")
+                },
+                click: function(){
+                    $(this).css("background-color", "yellow")
+                }
+            })
+
+            $("#toggleBut").click(function(){
+                $("#togglePara").toggle(5000);
+            })
+        })
+
+        //Common DOM Events:
+        // Mouse Events     Keyboard Events     Form Events     Document/Window Events
+        //     click            keypress            submit          load
+        //  dblclick            keydown             change          resize
+        //  mouseenter          keyup               focus           scroll
+        //  mouseleave                              blur            unload
+        // (............and more)
+    </script>
+</head>
+<body>
+    <p id="p1">Paragraph One of some text</p>
+    <p class="second">Paragraph Two of some more text</p>
+    <p>lorem ipsum fake latin</p>
+    <p>yada yada yada</p>
+    <button>Click to hide paragraphs</button>
+
+    <p id="togglePara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati ratione ea vel molestias illo soluta repellendus voluptate aliquam, magni assumenda dicta at neque, exercitationem facilis minima quos officiis reprehenderit!</p>
+    <button id="toggleBut">Toggle Button</button>
+</body>
+</html>
